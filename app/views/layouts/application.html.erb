@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rails RPS</title>
+    <title>Sinatra RPS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+    <style>
+      body {
+        font-family: cambria;
+       } 
+    </style>
   </head>
 
   <body>
+    <div>
+      <a href="/">Rules</a>
+    </div>
+    <div>
+      <a href="/rock">Play Rock</a>
+      </div>
+    <div>
+      <a href="/paper">Play Paper</a>
+      </div>
+    <div>
+      <a href="/scissors">Play Scissors</a>
+      </div>
+
+
     <%= yield %>
+    <footer>
+      All rights reserved
+    </footer>
+
+
   </body>
 </html>
